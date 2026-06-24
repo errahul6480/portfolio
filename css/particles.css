@@ -1,0 +1,56 @@
+/* ==========================================
+   PARTICLE BACKGROUND - FINAL FIXED
+========================================== */
+
+#particles{
+  position:fixed;
+  inset:0;
+  width:100%;
+  height:100%;
+  z-index:-2;
+  pointer-events:none;
+  overflow:hidden;
+  background:radial-gradient(circle at top left,#0f172a 0%,#07111f 35%,#030712 100%);
+}
+
+#particles::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 20% 20%,rgba(56,189,248,.15),transparent 40%),
+    radial-gradient(circle at 80% 30%,rgba(139,92,246,.12),transparent 40%),
+    radial-gradient(circle at 50% 80%,rgba(56,189,248,.08),transparent 40%);
+  animation:backgroundFloat 15s ease-in-out infinite;
+}
+
+#particles::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:radial-gradient(white 1px,transparent 1px);
+  background-size:60px 60px;
+  opacity:.08;
+}
+
+body:not(.light) #particles{
+  filter:saturate(1.2);
+}
+
+body.light #particles{
+  background:radial-gradient(circle at top left,#ffffff,#f1f5f9,#e2e8f0);
+}
+
+body.light #particles::after{
+  opacity:.03;
+}
+
+@keyframes backgroundFloat{
+  0%,100%{
+    transform:translate(0,0);
+  }
+
+  50%{
+    transform:translate(20px,-20px);
+  }
+}

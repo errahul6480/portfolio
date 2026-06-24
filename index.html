@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rahul Singh - Java Full Stack Developer Portfolio" />
+  <title>Rahul Singh | Java Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+  <div id="loader">
+    <div class="loader-ring"></div>
+    <p>Loading Portfolio...</p>
+  </div>
+
+  <canvas id="particles"></canvas>
+  <div class="cursor"></div>
+
+  <header class="navbar">
+    <a href="#home" class="logo">Rahul Singh <span></span></a>
+
+    <nav id="navMenu">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <button id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <section id="home" class="hero section">
+    <div class="hero-content reveal">
+      <p class="tag">Open to Internship • Java Backend • Full Stack</p>
+
+      <h1>
+        Hi, I’m <span>Rahul Singh</span><br>
+        I build clean web applications.
+      </h1>
+
+      <h2><span id="typed"></span></h2>
+
+      <p>
+        Final-year B.Tech CSE student focused on Java, Spring Boot, React.js,
+        REST APIs, database design and practical full stack development.
+      </p>
+
+      <div class="hero-meta">
+        <span> Bihar, India</span>
+        <span>B.Tech CSE 2027</span>
+        <span>4+ Projects</span>
+      </div>
+
+      <div class="hero-buttons">
+        <a class="btn primary" href="assets/resume.pdf" download>Download Resume</a>
+        <a class="btn secondary" href="#contact">Hire Me</a>
+      </div>
+    </div>
+
+    <div class="hero-card reveal">
+      <div class="profile-card">
+        <div class="status-badge">Available for opportunities</div>
+
+        <img src="assets/profile.jpg" alt="Rahul Singh" class="profile-img" />
+
+        <h3>Rahul Singh</h3>
+        <p>Java Full Stack Developer</p>
+
+        <div class="contact-line">
+          📧 <a href="mailto:rahulkumarsingh6480@gmail.com">rahulkumarsingh6480@gmail.com</a>
+        </div>
+
+        <div class="contact-line">
+          📞 <a href="tel:+919798010143">+91-9798010143</a>
+        </div>
+
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/rahul-kumar64809798?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            target="_blank">LinkedIn</a>
+          <a href="https://github.com/rahul64809798" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section reveal">
+    <h2 class="title">About Me</h2>
+
+    <div class="glass about-grid">
+      <p>
+        I am a Computer Science Engineering student at I.K. Gujral Punjab
+        Technical University with hands-on experience in Java Full Stack
+        Development. I build real-world applications using Spring Boot,
+        React.js, Node.js, MySQL and PostgreSQL.
+      </p>
+
+      <div class="stats">
+        <div><b>4+</b><span>Projects</span></div>
+        <div><b>5</b><span>Certifications</span></div>
+        <div><b>2027</b><span>Graduation</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section reveal">
+    <h2 class="title">Education Timeline</h2>
+
+    <div class="timeline">
+      <div class="item">
+        <span>2023 - 2027</span>
+        <h3>B.Tech CSE</h3>
+        <p>Amritsar Group of Colleges, IKG PTU — CGPA: 6.4</p>
+      </div>
+
+      <div class="item">
+        <span>2019 - 2021</span>
+        <h3>12th - BSEB</h3>
+        <p>J.R.S H/S +2 Patruti Hata — 57.4%</p>
+      </div>
+
+      <div class="item">
+        <span>2019</span>
+        <h3>10th - BSEB</h3>
+        <p>High School Chainpur — 55%</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section reveal">
+    <h2 class="title">Skills Dashboard</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <p>Java, C, C++, JavaScript, SQL</p>
+      </div>
+      <div class="skill-card">
+        <h3>Frontend</h3>
+        <p>HTML5, CSS3, React.js</p>
+      </div>
+      <div class="skill-card">
+        <h3>Backend</h3>
+        <p>Spring Boot, Node.js, REST APIs</p>
+      </div>
+      <div class="skill-card">
+        <h3>Databases</h3>
+        <p>MySQL, PostgreSQL</p>
+      </div>
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <p>VS Code, Git, GitHub, Postman</p>
+      </div>
+      <div class="skill-card">
+        <h3>CS Core</h3>
+        <p>DSA, DBMS, OS, OOP, SDLC, MVC</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section reveal">
+    <h2 class="title">Projects Showcase</h2>
+
+    <div class="filters">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="fullstack">Full Stack</button>
+      <button data-filter="api">API</button>
+      <button data-filter="js">JavaScript</button>
+    </div>
+
+    <div class="project-grid">
+      <div class="project-card" data-category="fullstack">
+        <h3>Library Management System</h3>
+        <p>Java, Spring Boot, React.js, MySQL</p>
+        <ul>
+          <li>CRUD for books, users and records</li>
+          <li>MVC architecture</li>
+          <li>Authentication and authorization</li>
+        </ul>
+      </div>
+
+      <div class="project-card" data-category="fullstack">
+        <h3>Student Management System</h3>
+        <p>Node.js, JavaScript, MySQL</p>
+        <ul>
+          <li>Role-based student portal</li>
+          <li>Secure login</li>
+          <li>Relational schema design</li>
+        </ul>
+      </div>
+
+      <div class="project-card" data-category="api">
+        <h3>Weather Application</h3>
+        <p>JavaScript, REST APIs</p>
+        <ul>
+          <li>Real-time weather data</li>
+          <li>JSON processing</li>
+          <li>Responsive UI</li>
+        </ul>
+      </div>
+
+      <div class="project-card" data-category="js">
+        <h3>To-Do List Application</h3>
+        <p>JavaScript</p>
+        <ul>
+          <li>Add, update, delete tasks</li>
+          <li>Clean UI</li>
+          <li>Daily productivity tracking</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section reveal">
+    <h2 class="title">Experience Timeline</h2>
+
+    <div class="timeline">
+      <div class="item">
+        <span>Project Experience</span>
+        <h3>Full Stack Development</h3>
+        <p>
+          Built scalable applications with CRUD operations, authentication,
+          database integration, REST APIs and responsive frontend design.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section reveal">
+    <h2 class="title">Certifications</h2>
+
+    <div class="cert-grid">
+      <span>NPTEL - Programming in Python</span>
+      <span>NPTEL - Theory of Computation</span>
+      <span>NPTEL - Cloud Computing</span>
+      <span>NPTEL - Computer Architecture</span>
+      <span>Udemy - Full Stack Web Development</span>
+    </div>
+  </section>
+
+  <section id="achievements" class="section reveal">
+    <h2 class="title">Achievements</h2>
+
+    <div class="glass">
+      <p>
+        Strong foundation in SDLC, MVC architecture, REST API integration,
+        database design, SQL optimization, debugging, Git/GitHub and scalable
+        full stack web applications.
+      </p>
+    </div>
+  </section>
+
+  <section id="ai-dashboard" class="section reveal">
+    <h2 class="title">AI Dashboard</h2>
+
+    <div class="dashboard">
+      <div>
+        <h3>Role Match</h3>
+        <div class="bar"><span style="width:92%"></span></div>
+        <p>Java Developer / Backend Developer / Full Stack Developer</p>
+      </div>
+
+      <div>
+        <h3>Core Strength</h3>
+        <div class="bar"><span style="width:88%"></span></div>
+        <p>OOP, DSA, DBMS, REST APIs</p>
+      </div>
+
+      <div>
+        <h3>Recruiter Fit</h3>
+        <div class="bar"><span style="width:90%"></span></div>
+        <p>Project-based practical experience</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-hire" class="section reveal">
+    <h2 class="title">Why Hire Me?</h2>
+
+    <div class="why-grid">
+      <div>✅ Quick learner</div>
+      <div>✅ Strong debugging skills</div>
+      <div>✅ Full stack project experience</div>
+      <div>✅ Database and API knowledge</div>
+    </div>
+  </section>
+
+  <section id="resume" class="section reveal">
+    <h2 class="title">Resume Preview</h2>
+
+    <div class="resume-box">
+      <iframe src="assets/resume.pdf"></iframe>
+      <a class="btn primary" href="assets/resume.pdf" download>Download PDF Resume</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section reveal">
+    <h2 class="title">Contact</h2>
+
+    <form class="contact-form" onsubmit="sendMessage(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button class="btn primary" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <button id="chatBtn">🤖</button>
+
+  <div id="chatbot" class="chatbot">
+    <div class="chat-head">
+      Rahul AI Assistant
+      <button id="closeChat">×</button>
+    </div>
+
+    <div id="chatBody">
+      <p>Hello! Ask about Rahul's skills, projects or resume.</p>
+    </div>
+
+    <input id="chatInput" placeholder="Type your question..." />
+  </div>
+
+  <footer>
+    <p>© 2026 Rahul Singh. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

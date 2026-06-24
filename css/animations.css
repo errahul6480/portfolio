@@ -1,0 +1,159 @@
+/* Loader Animation */
+@keyframes spin{
+  from{
+    transform:rotate(0deg);
+  }
+
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+/* Floating Profile Card */
+@keyframes float{
+  0%,100%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-18px);
+  }
+}
+
+/* Glass Glow Effect */
+@keyframes glow{
+  0%,100%{
+    box-shadow:0 0 20px rgba(56,189,248,.25);
+  }
+
+  50%{
+    box-shadow:
+      0 0 40px rgba(56,189,248,.45),
+      0 0 80px rgba(139,92,246,.25);
+  }
+}
+
+/* Fade Up Animation */
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(50px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* Gradient Animation */
+@keyframes gradientMove{
+  0%,100%{
+    background-position:0% 50%;
+  }
+
+  50%{
+    background-position:100% 50%;
+  }
+}
+
+/* Hero Card */
+.hero-card{
+  animation:
+    float 4s ease-in-out infinite,
+    glow 3s ease-in-out infinite;
+}
+
+/* Scroll Reveal */
+.reveal{
+  opacity:0;
+  transform:translateY(45px);
+  transition:all 1s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* Cards Hover Glow */
+.project-card,
+.skill-card{
+  position:relative;
+  overflow:hidden;
+}
+
+.project-card::before,
+.skill-card::before{
+  content:"";
+  position:absolute;
+  inset:-80px;
+  background:radial-gradient(circle,var(--brand),transparent 60%);
+  opacity:0;
+  transition:.4s;
+  pointer-events:none;
+}
+
+.project-card:hover::before,
+.skill-card:hover::before{
+  opacity:.12;
+}
+
+/* Card Hover Lift */
+.project-card:hover,
+.skill-card:hover{
+  transform:translateY(-10px);
+}
+
+/* Buttons */
+.btn{
+  transition:.3s ease;
+}
+
+.btn:hover{
+  transform:translateY(-4px) scale(1.03);
+}
+
+/* Navbar */
+.navbar{
+  animation:fadeUp .8s ease;
+}
+
+/* Title Gradient */
+.title{
+  background-size:200% 200%;
+  animation:gradientMove 5s linear infinite;
+}
+
+/* Social Icons */
+.socials a{
+  transition:.3s;
+}
+
+.socials a:hover{
+  color:#fff;
+  transform:translateY(-3px);
+}
+
+/* Profile Image */
+.profile-img{
+  transition:.5s;
+}
+
+.profile-img:hover{
+  transform:scale(1.04);
+}
+
+/* Timeline */
+.item{
+  transition:.3s;
+}
+
+.item:hover{
+  transform:translateX(8px);
+}
+
+/* Progress Bars */
+.bar span{
+  animation:fadeUp 1.5s ease;
+}

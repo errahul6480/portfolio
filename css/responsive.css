@@ -1,0 +1,95 @@
+@media(max-width:950px){
+  nav{
+    position:absolute;
+    top:72px;
+    right:0;
+    width:230px;
+    background:var(--card);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:20px;
+    padding:20px;
+    display:none;
+    flex-direction:column;
+    gap:15px;
+    box-shadow:var(--shadow);
+  }
+
+  nav.show,
+  nav.active{
+    display:flex;
+  }
+
+  #menuBtn{
+    display:block;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .hero-card{
+    max-width:380px;
+    margin:20px auto 0;
+  }
+
+  .profile-img{
+    max-width:280px;
+    height:340px;
+  }
+
+  .skills-grid,
+  .project-grid,
+  .cert-grid,
+  .why-grid,
+  .dashboard{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .stats{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:600px){
+  .section{
+    padding:90px 5% 40px;
+  }
+
+  .hero h1{
+    font-size:2.5rem;
+  }
+
+  .hero-card{
+    max-width:100%;
+    padding:22px;
+  }
+
+  .profile-img{
+    max-width:240px;
+    height:300px;
+  }
+
+  .skills-grid,
+  .project-grid,
+  .cert-grid,
+  .why-grid,
+  .dashboard{
+    grid-template-columns:1fr;
+  }
+
+  .resume-box iframe{
+    height:420px;
+  }
+
+  .chatbot{
+    width:90%;
+    right:5%;
+  }
+
+  .cursor{
+    display:none;
+  }
+}
